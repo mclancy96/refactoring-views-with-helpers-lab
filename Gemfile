@@ -1,19 +1,21 @@
+
 source 'https://rubygems.org'
 
-gem 'rails', '5.0.7.1'
-gem 'sqlite3', '~>1.3.6'
-gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-gem 'jbuilder', '~> 2.0'
-gem 'sdoc', '~> 0.4.0', group: :doc
-gem 'bootsnap'
+ruby '3.3.5'
+gem 'rails', '~> 7.1.0'
+gem 'sqlite3', '~> 1.6'
+gem 'jbuilder', '~> 2.11'
+gem 'puma', '~> 6.0'
+gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   gem 'pry'
   gem 'capybara'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '~> 6.0'
+  gem 'webrick'
+  gem 'ostruct'
 end
 
 group :development do
-  gem 'web-console', '~> 2.0'
+  gem 'web-console', '>= 4.0.0'
 end
